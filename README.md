@@ -76,11 +76,11 @@ Your journey will take you through the wildness of the American Midwest and acro
 ```
 
 1. In the **main** module, one of the first lines of code is `const drovers = hireDrovers(cattleToDrive)`. Explain what the value of the `drovers` variable is when that line of code runs.
-   > Your answer here
+   > an array of randomly selected drover objects from database.js and a set amount of those said objects by cattleToDrive
 2. At the bottom of the main module, you will see the following code - `for (const drover of drovers)`. Explain what the values of both the `drover` and the `drovers` variables are.
-   > Your answer here
+   > drover is a specfic objects inside the array of drovers which contains many drover objects
 3. In the **journey** module, there is a `journeyMaker()` function. In that function, there is a variable named `areas` which will have the value of an object. Use your debugger to show what the value of each key is on that object. Use [Loom](https://www.loom.com) to record your session.
-   > Your public Loom URL here
+   > https://www.loom.com/share/13333b7cc5b54279ae1a9609d6d840c1?sid=964142e6-f469-4721-a9f9-8a5d3bc93fda
 4. Also in the **journey** module, there is the following code:
    ```js
    for (let forestNumber = 0; forestNumber < areas.forests; forestNumber++) {
@@ -88,11 +88,11 @@ Your journey will take you through the wildness of the American Midwest and acro
    }
    ```
    Explain this code with your best vocabulary.
-   > Your answer here
+   > This sets the forstnumber to zero but is allowed to be reassigned because of "let". This later gets updated to the value returned from the areas.forests key. It then iterates through the code block journey.push("forest") by that set amount.
 5. Explain the value of the `database` variable in the **database** module. Be as comprehensive as possible.
-   > Your answer here
+   > The database creates two arrays that each store a set of objects within each array that have unique properties. One array being cattleTypes and the other being drovers. 
 6. In the **drovers** module, there is a `hireDrovers()` function. You will notice the following code on that line - `(herdSize)`. What is that defining, and where does it get its value?
-   > Your answer here
+   > herdSize is parameter used to define numberNeeded once it is divided by 10. herdSize gets it value once hireDrovers() is called in main.js using const drovers = hireDrovers(cattleToDrive). This passes the arguement cattleToDrive which is what sets the value.
 
 ## When You Are Done
 
